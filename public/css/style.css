@@ -1,0 +1,14 @@
+textarea#text {
+    min-height: 150px;
+}
+.article .article--title {
+    display: flex;
+    justify-content: space-between;
+}
+.article .article--title .control-button {
+    display: flex;
+    flex-direction: column;
+}
+.article .article--title .control-button .delete{
+    color: red;
+}
