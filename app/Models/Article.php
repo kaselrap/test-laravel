@@ -2,6 +2,8 @@
 
 namespace App\Models;
 
+use App\User;
+use function foo\func;
 use Illuminate\Database\Eloquent\Model;
 
 class Article extends Model
@@ -11,18 +13,30 @@ class Article extends Model
         'description',
         'text',
         'user_id',
-        'image_id',
-        'video_id'
+        'picture'
     ];
 
     /**
-
      * Get the articles that onws the user
-
      */
-
     public function user()
     {
-        return $this->hasOne(User::class);
+        return $this->belongsTo(User::class);
     }
+
+
+    /**
+     * Get the comments that has article
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
+    }
+
+    public function ip()
+    {
+        return $this->hasMany(Ip::class);
+    }
+
 }

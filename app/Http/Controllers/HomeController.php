@@ -2,23 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Article;
+use App\Models\Article;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Webpatser\Countries\Countries;
 
 class HomeController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
     /**
      * Show the application dashboard.
      *
@@ -26,8 +17,21 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $articles = DB::table('articles')->where('user_id', auth()->user()->id)->get();
+        $articles = Article::join('users', 'users.id', '=', 'articles.user_id')
+            ->select(['articles.*', 'users.name as user_name', 'users.id as user_id'])
+            ->paginate(15);
 
         return view('home', ['articles' => $articles]);
+    }
+
+    /**
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function countries()
+    {
+        $countries = Countries::getCountries();
+        return response()->json([
+            'countries' => $countries
+        ]);
     }
 }

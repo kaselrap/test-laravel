@@ -2,6 +2,8 @@
 
 namespace App;
 
+use App\Models\Article;
+use App\Models\Profile;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -28,6 +30,11 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
+    protected $casts = [
+        'data' => 'array'
+    ];
+
+
     /**
 
      * Get the article for user
@@ -37,8 +44,16 @@ class User extends Authenticatable
     public function articles()
 
     {
-
         return $this->hasMany(Article::class);
+    }
 
+    public function profile()
+    {
+        return $this->hasOne(Profile::class);
+    }
+
+    public function getData($name, $default = null)
+    {
+        return array_get($this->data, $name, $default);
     }
 }

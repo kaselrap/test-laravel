@@ -16,10 +16,14 @@ class CreateArticlesTable extends Migration
         Schema::create('articles', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
+            $table->longText('description');
             $table->longText('text');
             $table->boolean('active')->default(false);
             $table->string('picture')->nullable()->default(null);
             $table->string('video')->nullable()->default(null);
+            $table->integer('total_views')->unsigned()->default(0);
+            $table->integer('like')->unsigned()->default(0);
+            $table->integer('dislike')->unsigned()->default(0);
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
