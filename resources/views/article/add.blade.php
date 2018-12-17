@@ -46,6 +46,20 @@
                                 </div>
 
                                 <div class="form-group row">
+                                    <label for="text" class="col-md-4 col-form-label text-md-right">{{ __('Tags') }}</label>
+
+                                    <div class="col-md-6">
+                                        <textarea id="tags" type="tags" class="form-control{{ $errors->has('tags') ? ' is-invalid' : '' }}" name="tags" required>{{ old('tags') }}</textarea>
+
+                                        @if ($errors->has('tags'))
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $errors->first('tags') }}</strong>
+                                            </span>
+                                        @endif
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
                                     <label for="image" class="col-md-4 col-form-label text-md-right">{{ __('Preview Image') }}</label>
 
                                     <div class="col-md-6">

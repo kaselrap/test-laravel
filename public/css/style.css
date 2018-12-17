@@ -129,7 +129,7 @@ body.sidebar-none .content-section {
     border-radius: 0;
 }
 .article.full-article .card-body .card-img-top {
-    height: 640px;
+    height: 500px;
 }
 .article.full-article .card-body .card-title {
     padding: 25px 0;
@@ -171,4 +171,7 @@ body.sidebar-none .content-section {
     height: 2px;
     width: 0px;
     background: #777;
+}
+.next-articles .card-body .card-title {
+    padding-top: 0;
 }

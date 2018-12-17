@@ -46,6 +46,10 @@ Route::group(['prefix' => 'articles', 'middleware'=>'web'], function (){
         'middleware' => 'auth',
         'uses' => 'ArticleController@index'
     ]);
+    Route::get('all', [
+       'as' => 'article.all',
+       'uses' => 'ArticleController@all'
+    ]);
     Route::get('search/{query?}', [
         'as' => 'articles.search',
         'uses' => 'ArticleController@search'

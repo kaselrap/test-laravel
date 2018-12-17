@@ -20,7 +20,7 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
 @if(!request()->is('/'))
-    <body class="sidebar-none">
+    <body class="{!! !request()->is('/')? 'sidebar-none':'' !!}">
 @endif
     <div id="app" class="">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel fixed-top">

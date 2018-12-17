@@ -8,7 +8,7 @@
                     @if( isset($query) && !empty($query) )
                         <div class="card-header"><strong>{{__('Articles found by query')}} - {!! $query !!}</strong></div>
                     @else
-                        <div class="card-header">{{__('Recent Articles')}}</div>
+                        <div class="card-header">{{__('All Articles')}}</div>
                     @endif
                     <div class="card-body">
                         @if(\count($articles))
@@ -25,35 +25,29 @@
                                                     {{--<span class="text-muted d-block">Views: {{$article->ip()->count()}}</span>--}}
                                                     <span class="text-muted d-block">
                                                         <?php
-                                                            $created_at = $article->created_at->diff(\Carbon\Carbon::now());
-                                                            if( $created_at->d != 0 ) {
-                                                                if( $created_at->m !== 0 ) {
-                                                                    echo $created_at->format("%m months ago");
-                                                                } else {
-                                                                    echo $created_at->format("%d days ago");
-                                                                }
+                                                        $created_at = $article->created_at->diff(\Carbon\Carbon::now());
+                                                        if( $created_at->d != 0 ) {
+                                                            if( $created_at->m !== 0 ) {
+                                                                echo $created_at->format("%m months ago");
                                                             } else {
-                                                                echo $created_at->format("%h hours ago");
+                                                                echo $created_at->format("%d days ago");
                                                             }
+                                                        } else {
+                                                            echo $created_at->format("%h hours ago");
+                                                        }
                                                         ?>
                                                     </span>
-                                                    {{--<p class="card-text">{{$article->description}}</p>--}}
-                                                    {{--<div class="d-flex justify-content-between align-items-center">--}}
-                                                        {{--<div class="btn-group">--}}
-                                                            {{--<a class="btn btn-sm btn-outline-secondary" href="{{route('article.full', ['id'=>$article->id])}}">{{__('Full Article')}}</a>--}}
-                                                        {{--</div>--}}
-                                                    {{--</div>--}}
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 @endforeach
                             </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <a href="{{route('article.all')}}" class="show-more">{{__('Show More')}}</a>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    {{$articles->links()}}
+                                </div>
                             </div>
-                        </div>
                         @else
                             <div class="col-12 text-center">
                                 <p class="text-center">Not fount articles</p>

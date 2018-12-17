@@ -19,7 +19,8 @@ class HomeController extends Controller
     {
         $articles = Article::join('users', 'users.id', '=', 'articles.user_id')
             ->select(['articles.*', 'users.name as user_name', 'users.id as user_id'])
-            ->paginate(15);
+            ->orderBy('articles.created_at', 'DESC')
+            ->limit(12)->get();
 
         return view('home', ['articles' => $articles]);
     }

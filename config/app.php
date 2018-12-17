@@ -179,7 +179,7 @@ return [
         /**
          * External libraries
          */
-//        PragmaRX\Countries\ServiceProvider::class,
+        'Cohensive\Embed\EmbedServiceProvider',
     ],
 
     /*
@@ -232,7 +232,7 @@ return [
         /**
          * External libraries
          */
-//        'Countries'=> PragmaRX\Countries\Facade::class,
+        'Embed' => 'Cohensive\Embed\Facades\Embed'
 
     ],
 

@@ -59,6 +59,21 @@
                                 </div>
 
                                 <div class="form-group row">
+                                    <label for="video" class="col-md-4 col-form-label text-md-right">{{ __('Link to video') }}</label>
+
+                                    <div class="col-md-6">
+                                        <input id="video" type="text" class="form-control{{ $errors->has('video') ? ' is-invalid' : '' }}" name="video" value="{{ old('video',$article->video) }}">
+
+                                        @if ($errors->has('video'))
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $errors->first('video') }}</strong>
+                                            </span>
+                                        @endif
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group row">
                                     <label class="col-md-4 col-form-label text-md-right" for="image">{{ __('Upload Picture') }}:</label>
                                     <div class="col-md-6">
                                         <input style="height: 42px !important;" type="file" id="image" class="form-control"  name="picture"/>
