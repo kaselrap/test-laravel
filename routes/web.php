@@ -17,10 +17,33 @@ Auth::routes();
 
 Route::get('countries', 'ProfileController@countries')->name('countries');
 
-Route::get('/user/profile/{user}', [
-    'as' => 'user.profile',
-    'uses' => 'ProfileController@index'
-]);
+/**
+ * Users
+ */
+Route::group(['prefix' => 'users', 'middleware' => 'web'], function () {
+    Route::get('/', [
+        'as' => 'users',
+        'uses' => 'ProfileController@getAll'
+    ]);
+    Route::get('profile/{user}', [
+        'as' => 'user.profile',
+        'uses' => 'ProfileController@index'
+    ]);
+    Route::get('articles/{user}', [
+        'as' => 'user.articles',
+        'uses' => 'ArticleController@getByUserId'
+    ]);
+    Route::post('{type}/{user}', [
+        'as' => 'user.subscription',
+        'uses' => 'ProfileController@subscription'
+    ])->where('type', 'subscribe|unsubscribe');
+    Route::get('subscriptions', [
+        'as' => 'user.subscriptions',
+        'middleware' => 'auth',
+        'uses' => 'ProfileController@subscriptions'
+    ]);
+});
+
 
 Route::group(['prefix' => 'profile', 'middleware' => 'web'], function () {
     Route::get('/', [

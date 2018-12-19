@@ -59,6 +59,19 @@
                                 </div>
 
                                 <div class="form-group row">
+                                    <label for="tagsSelect" class="col-md-4 col-form-label text-md-right">{{ __('Tags') }}</label>
+
+                                    <div class="col-md-6">
+                                        <input type="text" id="tagsSelect" name="tags" multiple value="{{ old('tags',$article->tags) }}">
+                                        @if ($errors->has('tags'))
+                                            <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $errors->first('tags') }}</strong>
+                                        </span>
+                                        @endif
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
                                     <label for="video" class="col-md-4 col-form-label text-md-right">{{ __('Link to video') }}</label>
 
                                     <div class="col-md-6">
@@ -103,3 +116,26 @@
         </div>
     </div>
 @endsection
+@push('select2-css')
+    <link rel="stylesheet" href="{{asset('css/selectize.css')}}">
+@endpush
+@push('select2-js')
+    <script src="{{asset('js/selectize.js')}}"></script>
+@endpush
+
+@push('scripts')
+    <script>
+        $(document).ready(function() {
+            $('#tagsSelect').selectize({
+                delimiter: ',',
+                persist: false,
+                create: function(input) {
+                    return {
+                        value: input,
+                        text: input
+                    }
+                }
+            });
+        });
+    </script>
+@endpush

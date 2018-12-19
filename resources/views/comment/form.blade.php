@@ -73,7 +73,7 @@
                                  '         </div>\n'
                              );
                          } else {
-                             commentsWindow.append(''+
+                             commentsWindow.prepend(''+
                                  '<div class="comment">\n' +
                                  '     <div class="row">\n' +
                                  '          <div class="media mb-4">\n' +

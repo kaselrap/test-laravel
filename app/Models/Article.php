@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Article extends Model
 {
+    use \Conner\Tagging\Taggable;
 
     protected $fillable = [
         'title',
@@ -15,6 +16,7 @@ class Article extends Model
         'text',
         'user_id',
         'picture',
+        'tag',
         'video'
     ];
 
@@ -26,14 +28,13 @@ class Article extends Model
         return $this->belongsTo(User::class);
     }
 
-
     /**
      * Get the comments that has article
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
     public function comments()
     {
-        return $this->hasMany(Comment::class);
+        return $this->hasMany(Comment::class)->orderBy('created_at', 'DESC');
     }
 
     public function ip()

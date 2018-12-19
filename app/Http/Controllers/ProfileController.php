@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Article;
 use App\Models\Profile;
+use App\Models\Subscriber;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -40,6 +42,11 @@ class ProfileController extends Controller
             'profile' => Auth::user(),
             'gender' => $this->gender
         ]);
+    }
+
+    public function getAll()
+    {
+        return view('');
     }
 
     /**
@@ -94,5 +101,43 @@ class ProfileController extends Controller
             'results' => $countries
         ];
         return response()->json($data);
+    }
+
+    /**
+     * @param string $type
+     * @param User $user
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function subscription($type = 'subscribe', User $user)
+    {
+        $this_user_id = auth()->user()->id;
+        $subscribe_to_user_id = $user->id;
+
+        if( $type === 'subscribe' ) {
+            $subscriber = new Subscriber([
+                'user_id' => $subscribe_to_user_id,
+                'subscriber_id' => $this_user_id
+            ]);
+
+            $subscriber->save();
+        } else if ( $type === 'unsubscribe' ) {
+            $subscriber = Subscriber::where('user_id',$subscribe_to_user_id )
+                ->where('subscriber_id', $this_user_id)->delete();
+
+        }
+
+        return response()->json([
+            'success'
+        ]);
+    }
+
+    public function subscriptions()
+    {
+        $articles = \auth()->user()->subscribers()->getQuery()
+            ->join('users', 'users.id', '=', 'subscribers.user_id')
+            ->join('articles', 'users.id', '=', 'articles.user_id')
+            ->select(['articles.*', 'users.name as user_name'])
+            ->orderBy('articles.created_at', 'DESC')->paginate(18);
+        return view('user.articles', ['articles' => $articles]);
     }
 }

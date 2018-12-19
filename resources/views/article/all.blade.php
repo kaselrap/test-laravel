@@ -24,18 +24,7 @@
                                                     <span class="text-muted d-block">Views: {{$article->total_views}}</span>
                                                     {{--<span class="text-muted d-block">Views: {{$article->ip()->count()}}</span>--}}
                                                     <span class="text-muted d-block">
-                                                        <?php
-                                                        $created_at = $article->created_at->diff(\Carbon\Carbon::now());
-                                                        if( $created_at->d != 0 ) {
-                                                            if( $created_at->m !== 0 ) {
-                                                                echo $created_at->format("%m months ago");
-                                                            } else {
-                                                                echo $created_at->format("%d days ago");
-                                                            }
-                                                        } else {
-                                                            echo $created_at->format("%h hours ago");
-                                                        }
-                                                        ?>
+                                                        @include('article.created_at')
                                                     </span>
                                                 </div>
                                             </div>

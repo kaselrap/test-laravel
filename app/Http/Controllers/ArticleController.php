@@ -11,6 +11,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Event;
+use function Psy\bin;
 
 class ArticleController extends Controller
 {
@@ -31,7 +32,7 @@ class ArticleController extends Controller
         $articles = Article::join('users', 'users.id', '=', 'articles.user_id')
             ->where('user_id', auth()->user()->id)
             ->select(['articles.*', 'users.name as user_name'])
-            ->orderBy('articles.created_at', 'DESC')->paginate(15);
+            ->orderBy('articles.created_at', 'DESC')->paginate(18);
 
         return view('articles', ['articles' => $articles]);
     }
@@ -44,7 +45,7 @@ class ArticleController extends Controller
                 ->where('articles.title', 'LIKE', "%$query%")
                 ->orWhere('articles.text', 'LIKE', "%$query%")
                 ->select(['articles.*', 'users.name as user_name'])
-                ->orderBy('articles.created_at', 'DESC')->paginate(15);
+                ->orderBy('articles.created_at', 'DESC')->paginate(18);
 
             return view('home', ['articles' => $articles, 'query' => $query]);
         }
@@ -114,7 +115,8 @@ class ArticleController extends Controller
                 'title' => $request->get('title'),
                 'description' => $description,
                 'text' => $text,
-                'video' => $request->get('video')
+                'video' => $request->get('video'),
+                'tag' => $request->get('tags')[0]
             ]);
         }
         else {
@@ -125,22 +127,21 @@ class ArticleController extends Controller
                 'description' => $description,
                 'text' => $text,
                 'video' => $request->get('video'),
+                'tag' => $request->get('tags')[0],
                 'user_id' => auth()->user()->id
             ]);
 
             if($request->hasFile('picture')) {
-
                 $storagePath = storage_path() . '/app/public/articles/';
-                if(env('APP_ENV' === 'testing')) {
-                    $storagePath = storage_path() . '/app/public/test/';
-                }
+
                 $file = $request->file('picture');
-                $extension = strtolower($file->getClientOriginalName());
+                $extension = strtolower($file->getClientOriginalExtension());
                 if(in_array($extension, $this->allowed_extension, true)) {
-                    $fileName = auth()->user()->id. '-' . time() . '.' . $extension;
+                    $fileName = auth()->user()->id . '-' . time() . $file->getClientOriginalName();
                     if(file_exists($storagePath . $fileName)) {
                         @unlink($storagePath, $fileName);
                     }
+
                     if($file->move($storagePath, $fileName)) {
                         $article->picture = $fileName;
                     }
@@ -192,6 +193,19 @@ class ArticleController extends Controller
         $this->viewsUp($article);
 
         return view('article.full', ['article'=>$article]);
+    }
+
+    /**
+     * @param User $user
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function getByUserId(User $user = null)
+    {
+        if( $user instanceof User) {
+            return view('user.articles', ['user' => $user]);
+        } else {
+            return route('home');
+        }
     }
 
     /**

@@ -180,6 +180,7 @@ return [
          * External libraries
          */
         'Cohensive\Embed\EmbedServiceProvider',
+        \Conner\Tagging\Providers\TaggingServiceProvider::class,
     ],
 
     /*
