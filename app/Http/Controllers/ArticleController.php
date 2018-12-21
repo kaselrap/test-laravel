@@ -116,7 +116,7 @@ class ArticleController extends Controller
                 'description' => $description,
                 'text' => $text,
                 'video' => $request->get('video'),
-                'tag' => $request->get('tags')[0]
+                'tag' => $request->get('tags')
             ]);
         }
         else {
@@ -127,7 +127,7 @@ class ArticleController extends Controller
                 'description' => $description,
                 'text' => $text,
                 'video' => $request->get('video'),
-                'tag' => $request->get('tags')[0],
+                'tag' => $request->get('tags'),
                 'user_id' => auth()->user()->id
             ]);
 
