@@ -62,10 +62,10 @@
                                     <label for="tagsSelect" class="col-md-4 col-form-label text-md-right">{{ __('Tags') }}</label>
 
                                     <div class="col-md-6">
-                                        <input type="text" id="tagsSelect" name="tags" multiple value="{{ old('tags',$article->tags) }}">
-                                        @if ($errors->has('tags'))
+                                        <input type="text" id="tagsSelect" name="tag" multiple value="{{ isset($article->tag) && !empty($article->tag) ? old('tags',$article->tag) : '' }}">
+                                        @if ($errors->has('tag'))
                                             <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('tags') }}</strong>
+                                            <strong>{{ $errors->first('tag') }}</strong>
                                         </span>
                                         @endif
                                     </div>
