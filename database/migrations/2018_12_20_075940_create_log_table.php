@@ -13,10 +13,12 @@ class CreateLogTable extends Migration
      */
     public function up()
     {
-        Schema::create('log', function (Blueprint $table) {
-            $table->increments('id');
-            $table->timestamps();
-        });
+        if (!Schema::hasTable('log')) {
+            Schema::create('log', function (Blueprint $table) {
+                $table->increments('id');
+                $table->timestamps();
+            });
+        }
     }
 
     /**

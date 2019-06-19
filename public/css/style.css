@@ -199,3 +199,6 @@ body.sidebar-none .content-section {
 .card-title a {
     color: #fff;
 }
+.select2-results__option {
+    color: #222;
+}

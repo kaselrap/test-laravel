@@ -57,41 +57,21 @@ class User extends Authenticatable
         return array_get($this->data, $name, $default);
     }
 
-    public function subscripions() {
-        return $this->belongsToMany(User::class, '');
-    }
-
-    public function subscriber()
+    public function manyArticles()
     {
-        return $this->belongsTo(Subscriber::class, 'id', 'subscriber_id');
-    }
-
-    public function subscription()
-    {
-        return $this->belongsTo(Subscriber::class, 'id', 'user_id');
-    }
-
-    public function subscribers()
-    {
-        return $this->belongsTo(Subscriber::class, 'id', 'subscriber_id');
+        return $this->hasManyThrough(Article::class, Subscriber::class, 'subscriber_id', 'user_id', 'id', 'user_id');
     }
 
     public function subscriptions()
     {
-        return $this->belongsTo(Subscriber::class, 'id', 'user_id');
+        return $this->belongsToMany(User::class, 'subscribers', 'subscriber_id', 'user_id');
     }
 
-    public function manyArticles()
+    public function subscribers()
     {
-        return $this->hasManyThrough(
-            Article::class,
-            Subscriber::class,
-            'subscriber_id',
-            'user_id',
-            'id',
-            'user_id'
-        )->where('active', 1);
+        return $this->belongsToMany(User::class , 'subscribers', 'user_id', 'subscriber_id');
     }
+
 
     /**
      * @return mixed

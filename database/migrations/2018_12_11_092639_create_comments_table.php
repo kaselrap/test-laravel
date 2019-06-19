@@ -13,19 +13,21 @@ class CreateCommentsTable extends Migration
      */
     public function up()
     {
-        Schema::create('comments', function (Blueprint $table) {
-            $table->increments('id');
-            $table->longText('text');
-            $table->integer('user_id')->unsigned();
-            $table->integer('answered_comment_id')->unsigned()->nullable()->default(null);
-            $table->integer('article_id')->unsigned();
-            $table->timestamps();
-        });
-        Schema::table('comments', function ($table){
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->foreign('answered_comment_id')->references('id')->on('comments')->onDelete('cascade');
-            $table->foreign('article_id')->references('id')->on('articles')->onDelete('cascade');
-        });
+        if (!Schema::hasTable('comments')) {
+            Schema::create('comments', function (Blueprint $table) {
+                $table->increments('id');
+                $table->longText('text');
+                $table->integer('user_id')->unsigned();
+                $table->integer('answered_comment_id')->unsigned()->nullable()->default(null);
+                $table->integer('article_id')->unsigned();
+                $table->timestamps();
+            });
+            Schema::table('comments', function ($table){
+                $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+                $table->foreign('answered_comment_id')->references('id')->on('comments')->onDelete('cascade');
+                $table->foreign('article_id')->references('id')->on('articles')->onDelete('cascade');
+            });
+        }
     }
 
     /**

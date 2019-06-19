@@ -13,14 +13,16 @@ class CreateSubscribersTable extends Migration
      */
     public function up()
     {
-        Schema::create('subscribers', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('user_id')->unsigned()->nullable();
-            $table->integer('subscriber_id')->unsigned()->nullable();
-            $table->foreign('user_id')->references('id')->on('users');
-            $table->foreign('subscriber_id')->references('id')->on('users');
-            $table->timestamps();
-        });
+        if (!Schema::hasTable('subscribers')) {
+            Schema::create('subscribers', function (Blueprint $table) {
+                $table->increments('id');
+                $table->integer('user_id')->unsigned()->nullable();
+                $table->integer('subscriber_id')->unsigned()->nullable();
+                $table->foreign('user_id')->references('id')->on('users');
+                $table->foreign('subscriber_id')->references('id')->on('users');
+                $table->timestamps();
+            });
+        }
     }
 
     /**

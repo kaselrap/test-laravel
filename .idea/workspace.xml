@@ -2,147 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="edeee3e7-f89a-4776-a5f2-22dcea884387" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/lang/en/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_bootswatch.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/popular.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/871234d3-29ca-48ae-9c0b-cf9359e043c5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/871234d3-29ca-48ae-9c0b-cf9359e043c5.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Article.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/combined-stream/lib/combined_stream.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/combined-stream/lib/combined_stream.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/combined-stream/lib/defer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/combined-stream/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/combined-stream/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/fstream/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/fstream/lib/writer.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/fstream/lib/writer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/fstream/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/fstream/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/dist/ajv.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/dist/ajv.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/dist/ajv.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/dist/ajv.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/dist/ajv.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/dist/ajv.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/ajv.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/ajv.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/ajv.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/ajv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/compile/equal.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/compile/equal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/compile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/compile/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/compile/rules.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/compile/rules.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/compile/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/compile/util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dot/defaults.def" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dot/defaults.def" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dot/validate.jst" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dot/validate.jst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/_limit.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/_limit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/_limitItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/_limitItems.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/_limitLength.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/_limitLength.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/_limitProperties.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/_limitProperties.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/anyOf.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/anyOf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/const.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/const.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/contains.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/contains.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/dependencies.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/dependencies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/enum.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/enum.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/format.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/format.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/if.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/if.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/items.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/items.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/multipleOf.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/multipleOf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/not.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/not.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/oneOf.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/oneOf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/pattern.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/pattern.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/properties.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/properties.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/propertyNames.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/propertyNames.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/ref.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/ref.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/required.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/required.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/uniqueItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/uniqueItems.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/dotjs/validate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/keyword.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/keyword.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/refs/json-schema-draft-04.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/lib/refs/json-schema-draft-04.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/scripts/prepare-tests" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/har-validator/node_modules/ajv/scripts/prepare-tests" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lodash.clonedeep/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lodash.clonedeep/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lodash.clonedeep/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lodash.clonedeep/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lodash.mergewith/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lodash.mergewith/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lodash.mergewith/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lodash.mergewith/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nan/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nan/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/doc/asyncworker.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nan/doc/asyncworker.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/doc/errors.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nan/doc/errors.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/doc/json.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nan/doc/json.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/doc/maybe_types.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nan/doc/maybe_types.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/doc/methods.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nan/doc/methods.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/doc/new.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nan/doc/new.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/doc/persistent.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nan/doc/persistent.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/doc/scopes.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nan/doc/scopes.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/doc/script.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nan/doc/script.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/doc/v8_internals.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nan/doc/v8_internals.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/doc/v8_misc.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nan/doc/v8_misc.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/nan-2.11.1.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/nan.h" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nan/nan.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/nan_converters_43_inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nan/nan_converters_43_inl.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/nan_implementation_12_inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nan/nan_implementation_12_inl.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/nan_maybe_43_inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nan/nan_maybe_43_inl.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/nan_maybe_pre_43_inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nan/nan_maybe_pre_43_inl.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/nan_object_wrap.h" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nan/nan_object_wrap.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/nan_weak.h" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nan/nan_weak.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nan/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nan/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/node-sass/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/node-sass/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/binding.gyp" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/node-sass/binding.gyp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/lib/extensions.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/node-sass/lib/extensions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/node-sass/lib/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/lib/watcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/node-sass/lib/watcher.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/node-sass/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/src/create_string.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/node-sass/src/create_string.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/test/spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/node-sass/test/spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/vendor/linux-x64-57/binding.node" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/psl/data/rules.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/psl/data/rules.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/psl/dist/psl.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/psl/dist/psl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/psl/dist/psl.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/psl/dist/psl.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/psl/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/psl/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/psl/yarn.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sshpk/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sshpk/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sshpk/bin/sshpk-conv" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sshpk/bin/sshpk-conv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sshpk/lib/fingerprint.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sshpk/lib/fingerprint.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sshpk/lib/formats/auto.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sshpk/lib/formats/auto.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sshpk/lib/formats/pem.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sshpk/lib/formats/pem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sshpk/lib/formats/pkcs8.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sshpk/lib/formats/pkcs8.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sshpk/lib/formats/x509-pem.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sshpk/lib/formats/x509-pem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sshpk/lib/formats/x509.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sshpk/lib/formats/x509.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sshpk/lib/key.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sshpk/lib/key.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sshpk/lib/private-key.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sshpk/lib/private-key.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sshpk/lib/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sshpk/lib/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sshpk/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sshpk/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tar/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tar/lib/parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tar/lib/parse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tar/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tar/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_12_10_082939_create_articles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_12_10_082939_create_articles_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_12_11_092639_create_comments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_12_11_092639_create_comments_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_12_12_154759_change_table_users.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_12_12_154759_change_table_users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_12_13_131646_create_ip_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_12_13_131646_create_ip_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_12_14_110918_create_subscribers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_12_14_110918_create_subscribers_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_12_20_075940_create_log_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_12_20_075940_create_log_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/article.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/article.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/article/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/article/add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/article/all.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/article/all.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/article/created_at.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/article/created_at.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/article/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/article/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/article/full.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/article/full.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/article/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/article/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/articles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/comment/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/comment/form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/profile/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/articles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/articles.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/article/recent.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/article/recent.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/user/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/profile.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -180,60 +55,39 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="veselov: schema" type="ebfa3cd1:MariaImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="veselov@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="veselov: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="articles: table" type="dbc44a63:MariaImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="veselov@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="veselov: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="comments: table" type="dbc44a63:MariaImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/article/edit.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ArticleController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="83" column="38" selection-start-line="83" selection-start-column="38" selection-end-line="83" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/sidebar.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+            <state relative-caret-position="2985">
+              <caret line="207" column="86" selection-start-line="207" selection-start-column="86" selection-end-line="207" selection-end-column="86" />
               <folding>
-                <element signature="n#style#0;n#h5#0;n#ul#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#40#63#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Feature/Auth/LoginTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+        <entry file="das://871234d3-29ca-48ae-9c0b-cf9359e043c5/schema/veselov/table/subscribers">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true">
+                <filter text="" />
+              </filtering>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/article/index.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/user/articles.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="16" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="3" selection-end-column="16" />
+            <state relative-caret-position="150">
+              <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -241,44 +95,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/user/profile.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="62" column="65" selection-start-line="62" selection-start-column="65" selection-end-line="62" selection-end-column="65" />
+            <state relative-caret-position="1680">
+              <caret line="112" column="90" selection-start-line="112" selection-start-column="90" selection-end-line="112" selection-end-column="90" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/css/style.css">
+        <entry file="file://$PROJECT_DIR$/resources/views/article/full.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="193" selection-start-line="193" selection-end-line="193" />
+            <state relative-caret-position="420">
+              <caret line="100" column="102" selection-start-line="100" selection-start-column="102" selection-end-line="100" selection-end-column="102" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/article/all.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="173" selection-start-line="19" selection-start-column="173" selection-end-line="19" selection-end-column="173" />
+            <state relative-caret-position="1155">
+              <caret line="84" column="5" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/article.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="149" selection-start-line="3" selection-start-column="149" selection-end-line="3" selection-end-column="154" />
+            <state relative-caret-position="360">
+              <caret line="33" column="36" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -295,8 +140,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>like</find>
-      <find>count</find>
       <find>commen</find>
       <find>article-in</find>
       <find>time</find>
@@ -325,6 +168,8 @@
       <find>card-title</find>
       <find>sidebar</find>
       <find>articles</find>
+      <find>.show-more</find>
+      <find>getBy</find>
     </findStrings>
     <replaceStrings>
       <replace>gender</replace>
@@ -343,16 +188,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2018_12_14_110918_create_subscribers_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2018_12_10_082939_create_articles_table.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/871234d3-29ca-48ae-9c0b-cf9359e043c5/console_1.sql" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/871234d3-29ca-48ae-9c0b-cf9359e043c5/console.sql" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" />
-        <option value="$PROJECT_DIR$/resources/views/article/recent.blade.php" />
-        <option value="$PROJECT_DIR$/tests/Unit/ExampleTest.php" />
-        <option value="$PROJECT_DIR$/tests/Feature/Auth/EmailVerificationTest.php" />
         <option value="$PROJECT_DIR$/tests/Feature/Auth/ForgotPasswordTest.php" />
         <option value="$PROJECT_DIR$/phpunit.xml" />
         <option value="$PROJECT_DIR$/composer.json" />
@@ -374,7 +209,6 @@
         <option value="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/article/add.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/article/created_at.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/article/full.blade.php" />
         <option value="$PROJECT_DIR$/resources/sass/_bootswatch.scss" />
         <option value="$PROJECT_DIR$/resources/sass/_variables.scss" />
         <option value="$PROJECT_DIR$/resources/sass/app.scss" />
@@ -383,17 +217,28 @@
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/popular.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
-        <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/app/Models/Article.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" />
         <option value="$PROJECT_DIR$/resources/views/sidebar.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/article/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/article/all.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/article.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/article/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/user/profile.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/article/recent.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_12_10_082939_create_articles_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_12_11_092639_create_comments_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_12_12_154759_change_table_users.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_12_13_131646_create_ip_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_12_14_110918_create_subscribers_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_12_20_075940_create_log_table.php" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_06_19_214850_foreigns.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_06_19_225311_change_charset_table.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" />
+        <option value="$PROJECT_DIR$/app/User.php" />
+        <option value="$PROJECT_DIR$/resources/views/user/profile.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/article/full.blade.php" />
       </list>
     </option>
   </component>
@@ -507,6 +352,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -518,23 +364,6 @@
               <item name="test-laravel" type="b2602c69:ProjectViewProjectNode" />
               <item name="test-laravel" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test-laravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test-laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test-laravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test-laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test-laravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test-laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="test-laravel" type="b2602c69:ProjectViewProjectNode" />
@@ -554,36 +383,18 @@
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="article" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="test-laravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test-laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test-laravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test-laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test-laravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test-laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Диплом/Веселов" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -673,7 +484,12 @@
       <workItem from="1560819308813" duration="729000" />
       <workItem from="1560858916115" duration="26000" />
       <workItem from="1560864835775" duration="819000" />
-      <workItem from="1560966335005" duration="10602000" />
+      <workItem from="1560966335005" duration="10751000" />
+      <workItem from="1560980857663" duration="1524000" />
+      <workItem from="1560983292647" duration="30000" />
+      <workItem from="1560983694460" duration="24000" />
+      <workItem from="1560983780242" duration="1756000" />
+      <workItem from="1560986263749" duration="21000" />
     </task>
     <task id="LOCAL-00001" summary="New functionality">
       <created>1545042156252</created>
@@ -728,7 +544,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="227132000" />
+    <option name="totallyTimeSpent" value="230636000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -743,7 +559,7 @@
     <frame x="0" y="0" width="1920" height="1035" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2769477" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29295623" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -756,8 +572,8 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32939914" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" weight="0.32939914" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.44542447" />
+      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.3296582" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.44542447" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32975295" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.32855567" />
       <window_info anchor="bottom" id="SQL Generator" order="13" weight="0.32975295" />
@@ -770,6 +586,16 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="New functionality" />
     <MESSAGE value="Added sorting and link to video" />
@@ -778,117 +604,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Added triggers" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests/Feature/Auth/ResetPasswordTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/Auth/ForgotPasswordTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="53" column="58" selection-start-line="53" selection-start-column="58" selection-end-line="53" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/Auth/RegisterTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="49" column="10" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="59" selection-start-column="59" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/lang/en/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/framework/views/a5d7deea622cf14cc8811c9b940ac58b48a899c1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="34" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/comment/form.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="156" selection-start-line="5" selection-start-column="156" selection-end-line="5" selection-end-column="156" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/comment/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="61" column="65" selection-start-line="61" selection-start-column="65" selection-end-line="61" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/register.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="66" column="54" selection-start-line="66" selection-start-column="54" selection-end-line="66" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/verify.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="73" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="36" column="77" selection-start-line="36" selection-start-column="77" selection-end-line="36" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="54" column="58" selection-start-line="54" selection-start-column="58" selection-end-line="54" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/article/add.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="48" column="108" selection-start-line="48" selection-start-column="108" selection-end-line="48" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/article/script.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/article/recent.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webpack.mix.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -945,13 +660,6 @@
         <state relative-caret-position="-855" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/user/articles.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="44" lean-forward="true" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/articles.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -966,24 +674,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProfileController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="136" column="81" selection-start-line="136" selection-start-column="69" selection-end-line="136" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/popular.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/profile/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="45" column="117" selection-start-line="45" selection-start-column="117" selection-end-line="45" selection-end-column="117" />
         </state>
       </provider>
     </entry>
@@ -994,34 +688,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="69" column="38" lean-forward="true" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="46" column="76" selection-start-line="46" selection-start-column="76" selection-end-line="46" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/Article.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ArticleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="131" column="48" selection-start-line="131" selection-start-column="48" selection-end-line="131" selection-end-column="48" />
-          <folding>
-            <element signature="e#40#63#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1051,13 +721,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/article/full.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="53" selection-start-line="53" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/sidebar.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1068,17 +731,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/article/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1245">
+          <caret line="83" column="38" selection-start-line="83" selection-start-column="38" selection-end-line="83" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/article/recent.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="187" selection-start-line="3" selection-start-column="187" selection-end-line="3" selection-end-column="187" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/Feature/Auth/LoginTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
+        <state relative-caret-position="555">
           <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/article/edit.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/article/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="83" column="38" selection-start-line="83" selection-start-column="38" selection-end-line="83" selection-end-column="38" />
+        <state relative-caret-position="45">
+          <caret line="3" column="16" selection-start-line="2" selection-start-column="8" selection-end-line="3" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -1103,24 +780,237 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/article/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="16" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="3" selection-end-column="16" />
+        <state relative-caret-position="195">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="23" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/user/profile.blade.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_10_082939_create_articles_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="62" column="65" selection-start-line="62" selection-start-column="65" selection-end-line="62" selection-end-column="65" />
+        <state relative-caret-position="421">
+          <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_11_092639_create_comments_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_12_154759_change_table_users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_13_131646_create_ip_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_14_110918_create_subscribers_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_20_075940_create_log_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://871234d3-29ca-48ae-9c0b-cf9359e043c5/schema/veselov/table/comments">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/871234d3-29ca-48ae-9c0b-cf9359e043c5.SCHEMA:veselov">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>871234d3-29ca-48ae-9c0b-cf9359e043c5.SCHEMA:veselov</OriginalElement>
+          <nodes>
+            <node x="63.333333333333485" y="156.66666666666663">871234d3-29ca-48ae-9c0b-cf9359e043c5.TABLE:veselov.log</node>
+            <node x="34.25" y="317.0">871234d3-29ca-48ae-9c0b-cf9359e043c5.TABLE:veselov.articles</node>
+            <node x="0.0" y="730.0">871234d3-29ca-48ae-9c0b-cf9359e043c5.TABLE:veselov.ip</node>
+            <node x="296.25" y="0.0">871234d3-29ca-48ae-9c0b-cf9359e043c5.TABLE:veselov.users</node>
+            <node x="0.0" y="998.984375">871234d3-29ca-48ae-9c0b-cf9359e043c5.TABLE:veselov.password_resets</node>
+            <node x="299.25" y="425.0">871234d3-29ca-48ae-9c0b-cf9359e043c5.TABLE:veselov.subscribers</node>
+            <node x="39.333333333333485" y="18.33333333333333">871234d3-29ca-48ae-9c0b-cf9359e043c5.TABLE:veselov.migrations</node>
+            <node x="315.0" y="730.0">871234d3-29ca-48ae-9c0b-cf9359e043c5.TABLE:veselov.comments</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="871234d3-29ca-48ae-9c0b-cf9359e043c5.TABLE:veselov.comments" target="871234d3-29ca-48ae-9c0b-cf9359e043c5.TABLE:veselov.comments">
+              <point x="0.0" y="97.5" />
+              <point x="455.5" y="945.0" />
+              <point x="295.0" y="945.0" />
+              <point x="295.0" y="827.5" />
+              <point x="-140.5" y="-0.0" />
+            </edge>
+            <edge source="871234d3-29ca-48ae-9c0b-cf9359e043c5.TABLE:veselov.comments" target="871234d3-29ca-48ae-9c0b-cf9359e043c5.TABLE:veselov.articles">
+              <point x="-70.25" y="-97.5" />
+              <point x="385.25" y="705.0" />
+              <point x="218.0" y="705.0" />
+              <point x="61.25" y="181.5" />
+            </edge>
+            <edge source="871234d3-29ca-48ae-9c0b-cf9359e043c5.TABLE:veselov.subscribers" target="871234d3-29ca-48ae-9c0b-cf9359e043c5.TABLE:veselov.users">
+              <point x="54.0" y="-73.5" />
+              <point x="461.25" y="292.0" />
+              <point x="435.0" y="292.0" />
+              <point x="27.75" y="133.5" />
+            </edge>
+            <edge source="871234d3-29ca-48ae-9c0b-cf9359e043c5.TABLE:veselov.articles" target="871234d3-29ca-48ae-9c0b-cf9359e043c5.TABLE:veselov.users">
+              <point x="0.0" y="-181.5" />
+              <point x="156.75" y="292.0" />
+              <point x="324.0" y="292.0" />
+              <point x="-83.25" y="133.5" />
+            </edge>
+            <edge source="871234d3-29ca-48ae-9c0b-cf9359e043c5.TABLE:veselov.comments" target="871234d3-29ca-48ae-9c0b-cf9359e043c5.TABLE:veselov.users">
+              <point x="70.25" y="-97.5" />
+              <point x="525.75" y="292.0" />
+              <point x="490.5" y="292.0" />
+              <point x="83.25" y="133.5" />
+            </edge>
+            <edge source="871234d3-29ca-48ae-9c0b-cf9359e043c5.TABLE:veselov.ip" target="871234d3-29ca-48ae-9c0b-cf9359e043c5.TABLE:veselov.articles">
+              <point x="0.0" y="-97.5" />
+              <point x="-61.25" y="181.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="-649.0" y="323.0" />
+          <SelectedNodes>
+            <node>871234d3-29ca-48ae-9c0b-cf9359e043c5.TABLE:veselov.log</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/pragmarx/countries/src/data/countries/default/rus.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4126" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/pragmarx/countries/src/data/countries/default/_all_countries.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1575" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/pragmarx/countries/src/data/countries/overload/eur.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1350" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/pragmarx/countries/src/package/Countries.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProfileController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="85" column="26" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/profile/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="164" column="40" selection-start-line="164" selection-start-column="40" selection-end-line="164" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="193" selection-start-line="193" selection-end-line="193" />
+        <state relative-caret-position="388">
+          <caret line="202" column="16" selection-start-line="202" selection-start-column="16" selection-end-line="202" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_19_214850_foreigns.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_19_225311_change_charset_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ArticleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2985">
+          <caret line="207" column="86" selection-start-line="207" selection-start-column="86" selection-end-line="207" selection-end-column="86" />
+          <folding>
+            <element signature="e#40#63#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://871234d3-29ca-48ae-9c0b-cf9359e043c5/schema/veselov/table/subscribers">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user/articles.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user/profile.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="112" column="90" selection-start-line="112" selection-start-column="90" selection-end-line="112" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="84" column="5" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="33" column="36" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/article/full.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="100" column="102" selection-start-line="100" selection-start-column="102" selection-end-line="100" selection-end-column="102" />
         </state>
       </provider>
     </entry>

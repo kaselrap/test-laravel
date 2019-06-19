@@ -79,7 +79,7 @@
                                                                                     .removeClass('btn-danger')
                                                                                     .addClass('subscribed')
                                                                                     .addClass('btn-light')
-                                                                                    .text('Subscribed');
+                                                                                    .text('Подписан');
                                                                             }
                                                                         });
                                                                     });
@@ -98,7 +98,7 @@
                                                                                     .removeClass('btn-light')
                                                                                     .addClass('subscribe')
                                                                                     .addClass('btn-danger')
-                                                                                    .text('Subscribe');
+                                                                                    .text('Подписаться');
                                                                             }
                                                                         });
                                                                     });

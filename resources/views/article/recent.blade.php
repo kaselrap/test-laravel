@@ -1,7 +1,7 @@
 <div class="article">
     <div class="card mb-4">
         <div class="row">
-            <video class="card-img-top col-md-6" style="object-fit: cover; height: 124px;width: 100%; display: block" src="{{ env('APP_URL') . '/storage/videos/' . $article->video }}">
+            <video class="card-img-top col-md-6" style="object-fit: cover; height: 124px;width: 100%; display: block" src="{{ env('APP_URL') . '/storage/videos/' . $article->video }}#t=12">
             </video>
             <div class="card-body col-md-6">
                 <a href="{{route('article.full', $article->id)}}" class="card-title">

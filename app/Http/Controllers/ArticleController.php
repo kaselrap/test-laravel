@@ -93,12 +93,16 @@ class ArticleController extends Controller
     public function store(Request $request, $type = 'add', Article $article = null) {
         $request->validate([
             'title' => 'required|max:255',
-            'text'  => 'required|min:255'
+            'text'  => 'required'
+        ], [
+            'text.required' => 'Поле описание обязательно к заполнению',
+            'title.reuired' => 'Поле название обязательно к заполнению',
+            'title.max' => 'Максимальная длина названия 255 символов'
         ]);
 
         if ($article instanceof Article) {
             $text = $request->get('text');
-            $description = substr($text, 0, 120);
+            $description = mb_substr($text, 0, 120);
 
             if($request->hasFile('video')) {
                 $storagePath = storage_path() . '/app/public/videos/';
@@ -116,18 +120,18 @@ class ArticleController extends Controller
 
             $article->fill([
                 'title' => $request->get('title'),
-                'description' => $description,
-                'text' => $text,
+                'description' => "{$description}",
+                'text' => "{$text}",
                 'active' => $request->input('active', 0)
             ]);
         }
         else {
             $text = $request->get('text');
-            $description = substr($text, 0, 120);
+            $description = mb_substr($text, 0, 120);
             $article = new Article([
                 'title' => $request->get('title'),
-                'description' => $description,
-                'text' => $text,
+                'description' => "{$description}",
+                'text' => "{$text}",
                 'video' => $request->get('video'),
                 'user_id' => auth()->user()->id,
                 'active' => $request->input('active', 0)
@@ -201,7 +205,7 @@ class ArticleController extends Controller
     public function getByUserId(User $user = null)
     {
         if( $user instanceof User) {
-            return view('user.articles', ['user' => $user]);
+            return view('user.articles', ['articles' => $user->articles()->paginate(24)]);
         } else {
             return route('home');
         }

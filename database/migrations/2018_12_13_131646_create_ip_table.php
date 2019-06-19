@@ -13,15 +13,17 @@ class CreateIpTable extends Migration
      */
     public function up()
     {
-        Schema::create('ip', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('ip')->nullable();
-            $table->integer('article_id')->unsigned()->nullable();
-            $table->foreign('article_id')->references('id')->on('articles')->onDelete('cascade');
-            $table->boolean('view')->default(false);
-            $table->boolean('like')->default(false);
-            $table->timestamps();
-        });
+        if (!Schema::hasTable('ip')) {
+            Schema::create('ip', function (Blueprint $table) {
+                $table->increments('id');
+                $table->string('ip')->nullable();
+                $table->integer('article_id')->unsigned()->nullable();
+                $table->foreign('article_id')->references('id')->on('articles')->onDelete('cascade');
+                $table->boolean('view')->default(false);
+                $table->boolean('like')->default(false);
+                $table->timestamps();
+            });
+        }
     }
 
     /**
