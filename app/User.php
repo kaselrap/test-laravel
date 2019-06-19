@@ -8,6 +8,7 @@ use App\Models\Subscriber;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use App\Services\Debug;
 
 class User extends Authenticatable
 {
@@ -43,7 +44,6 @@ class User extends Authenticatable
      */
 
     public function articles()
-
     {
         return $this->hasMany(Article::class)->orderBy('created_at', 'DESC');
     }
@@ -56,6 +56,10 @@ class User extends Authenticatable
     public function getData($name, $default = null)
     {
         return array_get($this->data, $name, $default);
+    }
+
+    public function subscripions() {
+        return $this->belongsToMany(User::class, '');
     }
 
     public function subscriber()

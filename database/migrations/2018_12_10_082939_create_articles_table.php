@@ -20,7 +20,6 @@ class CreateArticlesTable extends Migration
             $table->longText('text');
             $table->boolean('active')->default(false);
             $table->string('picture')->nullable()->default(null);
-            $table->string('tag')->nullable()->default(null);
             $table->string('video')->nullable()->default(null);
             $table->integer('count_comments')->unsigned()->default(0);
             $table->integer('total_views')->unsigned()->default(0);

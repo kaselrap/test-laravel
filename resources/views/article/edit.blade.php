@@ -59,24 +59,15 @@
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="tagsSelect" class="col-md-4 col-form-label text-md-right">{{ __('Tags') }}</label>
-
-                                    <div class="col-md-6">
-                                        <input type="text" id="tagsSelect" name="tag" multiple value="{{ isset($article->tag) && !empty($article->tag) ? old('tags',$article->tag) : '' }}">
-                                        @if ($errors->has('tag'))
-                                            <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('tag') }}</strong>
-                                        </span>
-                                        @endif
-                                    </div>
-                                </div>
-
-                                <div class="form-group row">
                                     <label for="video" class="col-md-4 col-form-label text-md-right">{{ __('Link to video') }}</label>
 
                                     <div class="col-md-6">
-                                        <input id="video" type="text" class="form-control{{ $errors->has('video') ? ' is-invalid' : '' }}" name="video" value="{{ old('video',$article->video) }}">
-
+                                        <input id="video" type="file" class="form-control{{ $errors->has('video') ? ' is-invalid' : '' }}" name="video">
+                                        @if ($article->video)
+                                            <div class="card mt-3" style="width: 18rem;height: 190px;overflow: hidden">
+                                                <video class="card-img-top" style="object-fit: cover; height: 190px" src="{{ env('APP_URL') . '/storage/videos/' . $article->video }}" alt="{{ $article->fullName }}">
+                                            </div>
+                                        @endif
                                         @if ($errors->has('video'))
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $errors->first('video') }}</strong>
@@ -85,57 +76,17 @@
                                     </div>
                                 </div>
 
-
-                                <div class="form-group row">
-                                    <label class="col-md-4 col-form-label text-md-right" for="image">{{ __('Upload Picture') }}:</label>
-                                    <div class="col-md-6">
-                                        <input style="height: 42px !important;" type="file" id="image" class="form-control"  name="picture"/>
-                                        @if ($article->picture)
-                                            <div class="card mt-3" style="width: 18rem;">
-                                                <img class="card-img-top" src="{{ env('APP_URL') . '/storage/articles/' . $article->picture }}" alt="{{ $article->fullName }}">
-                                            </div>
-                                        @endif
-                                    </div>
-                                </div>
-
                                 <div class="form-group row mb-0">
                                     <div class="col-md-6 offset-md-4">
                                         <button type="submit" class="btn btn-primary">
-                                            {{ __('Save the Article') }}
+                                            {{ __('Save the Video') }}
                                         </button>
                                     </div>
                                 </div>
-
-
                             </form>
-
-
                     </div>
                 </div>
             </div>
         </div>
     </div>
 @endsection
-@push('select2-css')
-    <link rel="stylesheet" href="{{asset('css/selectize.css')}}">
-@endpush
-@push('select2-js')
-    <script src="{{asset('js/selectize.js')}}"></script>
-@endpush
-
-@push('scripts')
-    <script>
-        $(document).ready(function() {
-            $('#tagsSelect').selectize({
-                delimiter: ',',
-                persist: false,
-                create: function(input) {
-                    return {
-                        value: input,
-                        text: input
-                    }
-                }
-            });
-        });
-    </script>
-@endpush

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Article;
 use App\Models\Profile;
 use App\Models\Subscriber;
+use App\Services\Debug;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -133,11 +134,6 @@ class ProfileController extends Controller
 
     public function subscriptions()
     {
-        $articles = \auth()->user()->subscribers()->getQuery()
-            ->join('users', 'users.id', '=', 'subscribers.user_id')
-            ->join('articles', 'users.id', '=', 'articles.user_id')
-            ->select(['articles.*', 'users.name as user_name'])
-            ->orderBy('articles.created_at', 'DESC')->paginate(18);
-        return view('user.articles', ['articles' => $articles]);
+        return view('user.articles', ['articles' => \auth()->user()->manyArticles()->paginate(20)]);
     }
 }

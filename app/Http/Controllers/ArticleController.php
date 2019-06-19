@@ -29,12 +29,7 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        $articles = Article::join('users', 'users.id', '=', 'articles.user_id')
-            ->where('user_id', auth()->user()->id)
-            ->select(['articles.*', 'users.name as user_name'])
-            ->orderBy('articles.created_at', 'DESC')->paginate(18);
-
-        return view('articles', ['articles' => $articles]);
+        return view('articles', ['articles' => auth()->user()->articles()->paginate(18)]);
     }
 
     public function search(Request $request, $query = null)
@@ -95,28 +90,24 @@ class ArticleController extends Controller
             $text = $request->get('text');
             $description = substr($text, 0, 120);
 
-            if($request->hasFile('picture')) {
-                $storagePath = storage_path() . '/app/public/articles/';
+            if($request->hasFile('video')) {
+                $storagePath = storage_path() . '/app/public/videos/';
 
-                $file = $request->file('picture');
-                $extension = strtolower($file->getClientOriginalExtension());
-                if(in_array($extension, $this->allowed_extension, true)) {
-                    $fileName = auth()->user()->id . '-' . time() . $file->getClientOriginalName();
-                    if(file_exists($storagePath . $fileName)) {
-                        @unlink($storagePath, $fileName);
-                    }
+                $file = $request->file('video');
+                $fileName = auth()->user()->id . '-' . time() . $file->getClientOriginalName();
+                if(file_exists($storagePath . $fileName)) {
+                    @unlink($storagePath, $fileName);
+                }
 
-                    if($file->move($storagePath, $fileName)) {
-                        $article->picture = $fileName;
-                    }
+                if($file->move($storagePath, $fileName)) {
+                    $article->video = $fileName;
                 }
             }
+
             $article->fill([
                 'title' => $request->get('title'),
                 'description' => $description,
                 'text' => $text,
-                'video' => $request->get('video'),
-                'tag' => $request->get('tag')
             ]);
         }
         else {
@@ -127,24 +118,20 @@ class ArticleController extends Controller
                 'description' => $description,
                 'text' => $text,
                 'video' => $request->get('video'),
-                'tag' => $request->get('tag'),
                 'user_id' => auth()->user()->id
             ]);
 
-            if($request->hasFile('picture')) {
-                $storagePath = storage_path() . '/app/public/articles/';
+            if($request->hasFile('video')) {
+                $storagePath = storage_path() . '/app/public/videos/';
 
-                $file = $request->file('picture');
-                $extension = strtolower($file->getClientOriginalExtension());
-                if(in_array($extension, $this->allowed_extension, true)) {
-                    $fileName = auth()->user()->id . '-' . time() . $file->getClientOriginalName();
-                    if(file_exists($storagePath . $fileName)) {
-                        @unlink($storagePath, $fileName);
-                    }
+                $file = $request->file('video');
+                $fileName = auth()->user()->id . '-' . time() . $file->getClientOriginalName();
+                if(file_exists($storagePath . $fileName)) {
+                    @unlink($storagePath, $fileName);
+                }
 
-                    if($file->move($storagePath, $fileName)) {
-                        $article->picture = $fileName;
-                    }
+                if($file->move($storagePath, $fileName)) {
+                    $article->video = $fileName;
                 }
             }
         }
@@ -161,7 +148,7 @@ class ArticleController extends Controller
     public function delete(Article $article = null) {
         if($article) {
             Article::destroy($article->id);
-            return redirect()->route('articles')->with('success', 'Article Successfully deleted');
+            return redirect()->route('articles')->with('success', 'Video Successfully deleted');
         } else {
             return redirect()->route('articles');
         }

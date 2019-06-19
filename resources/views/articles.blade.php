@@ -5,9 +5,9 @@
             <div class="col-md-12">
                 <div class="card">
                     @if( isset($query) && !empty($query) )
-                        <div class="card-header"><strong>{{__('Articles found by query')}} - {!! $query !!}</strong></div>
+                        <div class="card-header"><strong>{{__('Videos found by query')}} - {!! $query !!}</strong></div>
                     @else
-                        <div class="card-header">{{__('Articles by')}} - {!! auth()->user()->data['first_name'] !!} {!! auth()->user()->data['last_name'] !!}</div>
+                        <div class="card-header">{{__('Videos by')}} - {!! auth()->user()->data['first_name'] !!} {!! auth()->user()->data['last_name'] !!}</div>
                     @endif
 
                     <div class="card-body">
@@ -25,12 +25,12 @@
                         @else
                             @if( isset($query) && !empty($query) )
                                 <div class="col-12 text-center">
-                                    <p class="text-center">Not fount articles</p>
+                                    <p class="text-center">Not fount videos</p>
                                 </div>
                             @else
                                 <div class="col-12 text-center">
                                     <a href="{{route('article.add')}}" class="btn btn-primary text-center">
-                                        {{ __('Add new Article') }}
+                                        {{ __('Add new video') }}
                                     </a>
                                 </div>
                             @endif

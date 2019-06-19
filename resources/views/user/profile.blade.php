@@ -79,13 +79,7 @@
                                         @guest
                                         @else
                                             @if(auth()->user()->id !== $user->id )
-                                                @if(
-                                                isset(auth()->user()->subscriber()->where('user_id', $user->id)->first()->id,
-                                                $user->subscription()->where('subscriber_id', auth()->user()->id)->first()->id)
-                                                &&
-                                                auth()->user()->subscriber()->where('user_id', $user->id)->first()->id
-                                                ===
-                                                $user->subscription()->where('subscriber_id', auth()->user()->id)->first()->id)
+                                                @if($user->subscribers()->where('subscriber_id', auth()->user()->id)->count() > 0)
                                                     <a class="btn btn-light subscribed" href="#">{{__('Subscribed')}}</a>
                                                 @else
                                                     <a class="btn btn-danger subscribe" href="#">{{__('Subscribe')}}</a>

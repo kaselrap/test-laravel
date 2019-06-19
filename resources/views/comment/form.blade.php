@@ -23,7 +23,6 @@
  @push('scripts')
      <script>
          $(document).ready(function (e) {
-
              var navigationFn = {
                  goToSection: function(id) {
                      $('html, body').animate({

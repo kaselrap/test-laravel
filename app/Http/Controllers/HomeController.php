@@ -3,9 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
-use App\User;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 use Webpatser\Countries\Countries;
 
 class HomeController extends Controller

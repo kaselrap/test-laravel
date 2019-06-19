@@ -43,7 +43,7 @@
 
                         @else
                             <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger" href="{{route('articles')}}">{{__('Articles')}}</a>
+                                <a class="nav-link js-scroll-trigger" href="{{route('articles')}}">{{__('Videos')}}</a>
                             </li>
                         @endguest
 
@@ -79,7 +79,7 @@
                                         {{ __('Edit Profile') }}
                                     </a>
                                     <a class="dropdown-item" href="{{ route('article.add') }}">
-                                        {{ __('Add new article') }}
+                                        {{ __('Add new video') }}
                                     </a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();

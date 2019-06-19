@@ -16,7 +16,7 @@
                             </div>
                         @else
                             <div class="col-12 text-center">
-                                <p class="text-center">Not fount articles</p>
+                                <p class="text-center">Not fount videos</p>
                             </div>
                         @endif
                     </div>
