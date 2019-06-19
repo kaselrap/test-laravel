@@ -20,17 +20,19 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
-@if(!request()->is('/'))
-    <body class="{!! !request()->is('/')? 'sidebar-none':'' !!}">
+@if(request()->is('/') || request()->is('popular') || request()->is('*/subscriptions*'))
+    <body>
+@else
+    <body class="sidebar-none">
 @endif
     <div id="app" class="">
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary navbar-laravel fixed-top">
             <div class="container-fluid">
                 <a href="#" id="toogle-opener-for-sidebar">
                     <i class="fas fa-bars"></i>
                 </a>
                 <a class="navbar-brand" href="{{ route('home') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    {{ config('app.name', 'Главная') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -43,16 +45,16 @@
 
                         @else
                             <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger" href="{{route('articles')}}">{{__('Videos')}}</a>
+                                <a class="nav-link js-scroll-trigger" href="{{route('articles')}}">{{__('Видео')}}</a>
                             </li>
                         @endguest
 
                     </ul>
                     <div class="container">
-                        <div class="row justify-content-center">
+                        <div class="row">
                             <form class="form-inline my-2 my-lg-0 col-md-6" method="GET" action="{{route('articles.search')}}">
-                                <input class="form-control mr-sm-2 col-md-10" name="query" type="text" placeholder="Search" aria-label="Search" value="{!! isset($query) ? old('query', $query) : '' !!}">
-                                <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+                                <input class="form-control mr-sm-2 col-md-10" name="query" type="text" placeholder="Поиск" aria-label="Search" value="{!! isset($query) ? old('query', $query) : '' !!}">
+                                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Поиск</button>
                             </form>
                         </div>
                     </div>
@@ -61,11 +63,11 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Логин') }}</a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Регистрация') }}</a>
                                 </li>
                             @endif
                         @else
@@ -76,15 +78,15 @@
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('profile.edit') }}">
-                                        {{ __('Edit Profile') }}
+                                        {{ __('Отредактировать профиль') }}
                                     </a>
                                     <a class="dropdown-item" href="{{ route('article.add') }}">
-                                        {{ __('Add new video') }}
+                                        {{ __('Добавить новое видео') }}
                                     </a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        {{ __('Выйти') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

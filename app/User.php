@@ -9,6 +9,7 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use App\Services\Debug;
+use Illuminate\Support\Facades\DB;
 
 class User extends Authenticatable
 {
@@ -38,9 +39,7 @@ class User extends Authenticatable
 
 
     /**
-
      * Get the article for user
-
      */
 
     public function articles()
@@ -80,5 +79,28 @@ class User extends Authenticatable
     public function subscriptions()
     {
         return $this->belongsTo(Subscriber::class, 'id', 'user_id');
+    }
+
+    public function manyArticles()
+    {
+        return $this->hasManyThrough(
+            Article::class,
+            Subscriber::class,
+            'subscriber_id',
+            'user_id',
+            'id',
+            'user_id'
+        )->where('active', 1);
+    }
+
+    /**
+     * @return mixed
+     */
+    public static function topUsers()
+    {
+        return self::withCount('articles')
+            ->orderBy('articles_count', 'desc')
+            ->take(6)
+            ->get();
     }
 }

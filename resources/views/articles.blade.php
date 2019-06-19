@@ -5,9 +5,9 @@
             <div class="col-md-12">
                 <div class="card">
                     @if( isset($query) && !empty($query) )
-                        <div class="card-header"><strong>{{__('Videos found by query')}} - {!! $query !!}</strong></div>
+                        <div class="card-header"><strong>{{__('Видео найденные по запросу')}} - {!! $query !!}</strong></div>
                     @else
-                        <div class="card-header">{{__('Videos by')}} - {!! auth()->user()->data['first_name'] !!} {!! auth()->user()->data['last_name'] !!}</div>
+                        <div class="card-header">{{__('Видео от')}} - {!! auth()->user()->data['first_name'] !!} {!! auth()->user()->data['last_name'] !!}</div>
                     @endif
 
                     <div class="card-body">
@@ -17,7 +17,7 @@
                             </div>
                         @endif
 
-                        @if(\count($articles))
+                        @if($articles)
                             <div class="row">
                                 @each('article.index', $articles, 'article')
                             </div>
@@ -25,12 +25,12 @@
                         @else
                             @if( isset($query) && !empty($query) )
                                 <div class="col-12 text-center">
-                                    <p class="text-center">Not fount videos</p>
+                                    <p class="text-center">Видео не найдены</p>
                                 </div>
                             @else
                                 <div class="col-12 text-center">
                                     <a href="{{route('article.add')}}" class="btn btn-primary text-center">
-                                        {{ __('Add new video') }}
+                                        {{ __('Добавить новое видео') }}
                                     </a>
                                 </div>
                             @endif

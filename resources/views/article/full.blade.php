@@ -58,9 +58,9 @@
                                                         @auth
                                                             @if(auth()->user()->id !== $article->user->id)
                                                             @if($article->user->subscribers()->where('subscriber_id', auth()->user()->id)->count() > 0)
-                                                                <a class="btn btn-secondary subscribed" href="#">{{__('Subscribed')}}</a>
+                                                                <a class="btn btn-secondary subscribed" href="#">{{__('Подписан')}}</a>
                                                             @else
-                                                                <a class="btn btn-danger subscribe" href="#">{{__('Subscribe')}}</a>
+                                                                <a class="btn btn-danger subscribe" href="#">{{__('Подписаться')}}</a>
                                                             @endif
                                                             @push('scripts')
                                                                 <script>
@@ -123,7 +123,7 @@
                         <div class="card mb-12">
                             <div class="comments-body">
                                 <h5 class="comments-title" data-value="{{$article->comments()->count()}}">
-                                    ({{$article->comments()->count()}}) commentaries
+                                    ({{$article->comments()->count()}}) комментариев
                                 </h5>
                                 @guest
 

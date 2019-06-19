@@ -6,25 +6,26 @@
             <div class="col-md-12">
                 <div class="card">
                     @if( isset($query) && !empty($query) )
-                        <div class="card-header"><strong>{{__('Videos found by query')}} - {!! $query !!}</strong></div>
+                        <div class="card-header"><strong>{{__('Видео найденные по запросу')}} - {!! $query !!}</strong></div>
                     @else
-                        <div class="card-header">{{__('Recent Videos')}}</div>
+                        <div class="card-header">{{__('Недавние видео')}}</div>
                     @endif
                     <div class="card-body">
-                        @if(\count($articles))
+                        @if($articles)
                             <div class="row">
-                                @for($i = 0; $i < 9; $i++)
-                                    @each('article', $articles, 'article')
-                                @endfor
+                                @each('article', $articles, 'article')
                             </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <a href="{{route('article.all')}}" class="show-more">{{__('Show More')}}</a>
-                            </div>
-                        </div>
+
+                            @if(count($articles) >= 12)
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <a href="{{route('article.all')}}" class="show-more">{{__('Show More')}}</a>
+                                    </div>
+                                </div>
+                            @endif
                         @else
                             <div class="col-12 text-center">
-                                <p class="text-center">Not fount videos</p>
+                                <p class="text-center">Видео не найдены</p>
                             </div>
                         @endif
                     </div>

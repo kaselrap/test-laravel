@@ -8,15 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class Article extends Model
 {
-    use \Conner\Tagging\Taggable;
-
     protected $fillable = [
         'title',
         'description',
         'text',
         'user_id',
         'picture',
-        'video'
+        'video',
+        'active'
     ];
 
     /**

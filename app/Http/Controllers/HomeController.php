@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
+use App\User;
 use Webpatser\Countries\Countries;
 
 class HomeController extends Controller
@@ -16,7 +17,7 @@ class HomeController extends Controller
     {
         $articles = Article::join('users', 'users.id', '=', 'articles.user_id')
             ->select(['articles.*', 'users.name as user_name', 'users.id as user_id'])
-            ->orderBy('articles.created_at', 'DESC')
+            ->orderBy('articles.created_at', 'DESC')->where('active', 1)
             ->limit(12)->get();
 
         return view('home', ['articles' => $articles]);

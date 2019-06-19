@@ -3,7 +3,7 @@
     <div class="form-group row">
 
         <div class="col-md-12">
-            <textarea id="text" type="text" class="form-control{{ $errors->has('text') ? ' is-invalid' : '' }}" placeholder="Type in your commentary here" name="text" required>{{ old('text') }}</textarea>
+            <textarea id="text" type="text" class="form-control{{ $errors->has('text') ? ' is-invalid' : '' }}" placeholder="Напишите свой комментарий здесь" name="text" required>{{ old('text') }}</textarea>
             @if ($errors->has('text'))
                 <span class="invalid-feedback" role="alert">
                     <strong>{{ $errors->first('text') }}</strong>
@@ -14,7 +14,7 @@
      <div class="form-group row mb-0">
          <div class="col-md-12 offset-md-12">
              <button type="submit" class="btn btn-primary">
-                 {{ __('Send Comments') }}
+                 {{ __('Отправить комментарий') }}
              </button>
          </div>
      </div>

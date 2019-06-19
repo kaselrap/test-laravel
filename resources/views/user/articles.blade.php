@@ -1,13 +1,12 @@
 @extends('layouts.app')
-
 @section('content')
     <div class="content-section__inner">
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header">{{__('Subscriptions')}}</div>
+                    <div class="card-header">{{__('Подписки')}}</div>
                     <div class="card-body">
-                        @if(\count($articles))
+                        @if($articles)
                             <div class="row">
                                 @each('article', $articles, 'article')
                             </div>
@@ -16,7 +15,7 @@
                             </div>
                         @else
                             <div class="col-12 text-center">
-                                <p class="text-center">Not fount videos</p>
+                                <p class="text-center">Видеофайлы не найдены</p>
                             </div>
                         @endif
                     </div>

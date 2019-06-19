@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Events\ArticleEvents;
-use App\Listeners\ArticleListeners;
 use App\Models\Article;
 use App\Models\Ip;
+use App\Services\Debug;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
@@ -32,6 +31,18 @@ class ArticleController extends Controller
         return view('articles', ['articles' => auth()->user()->articles()->paginate(18)]);
     }
 
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function popular()
+    {
+        return view('popular', [
+            'articles' => Article::orderBy('total_views', 'desc')
+            ->orderBy('like', 'desc')
+                ->orderBy('dislike', 'asc')->where('active', 1)->get()
+        ]);
+    }
+
     public function search(Request $request, $query = null)
     {
         if( $request->has('query') ) {
@@ -40,7 +51,7 @@ class ArticleController extends Controller
                 ->where('articles.title', 'LIKE', "%$query%")
                 ->orWhere('articles.text', 'LIKE', "%$query%")
                 ->select(['articles.*', 'users.name as user_name'])
-                ->orderBy('articles.created_at', 'DESC')->paginate(18);
+                ->orderBy('articles.created_at', 'DESC')->where('active', 1)->paginate(18);
 
             return view('home', ['articles' => $articles, 'query' => $query]);
         }
@@ -80,7 +91,6 @@ class ArticleController extends Controller
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function store(Request $request, $type = 'add', Article $article = null) {
-
         $request->validate([
             'title' => 'required|max:255',
             'text'  => 'required|min:255'
@@ -108,6 +118,7 @@ class ArticleController extends Controller
                 'title' => $request->get('title'),
                 'description' => $description,
                 'text' => $text,
+                'active' => $request->input('active', 0)
             ]);
         }
         else {
@@ -118,7 +129,8 @@ class ArticleController extends Controller
                 'description' => $description,
                 'text' => $text,
                 'video' => $request->get('video'),
-                'user_id' => auth()->user()->id
+                'user_id' => auth()->user()->id,
+                'active' => $request->input('active', 0)
             ]);
 
             if($request->hasFile('video')) {
@@ -159,9 +171,9 @@ class ArticleController extends Controller
      */
     public function getAll()
     {
-        $articles = Article::join('users', 'users.id', '=', 'articles.user_id')
-            ->get(['articles.*', 'users.name as user_name'])
-            ->orderBy('articles.created_at', 'DESC');
+        $articles = Article::join('users', 'users.id', '=', 'articles.user_id')->where('active', 1)
+            ->orderBy('articles.created_at', 'DESC')
+            ->get(['articles.*', 'users.name as user_name']);
 
         return view('articles', ['articles' => $articles]);
     }
@@ -202,7 +214,7 @@ class ArticleController extends Controller
     {
         $article = Article::join('users', 'users.id', '=', 'articles.user_id')
             ->select(['articles.*', 'users.name as user_name'])
-            ->orderBy('articles.created_at', 'DESC')
+            ->orderBy('articles.created_at', 'DESC')->where('active', 1)
         ->paginate(24);
 
         return view('article.all', ['articles' => $article]);

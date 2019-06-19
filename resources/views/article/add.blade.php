@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">{{__('Add New Article')}}</div>
+                    <div class="card-header">{{__('Добавить новый видеоролик')}}</div>
 
                     <div class="card-body">
                         @if (session('status'))
@@ -18,7 +18,7 @@
                                 @csrf
 
                                 <div class="form-group row">
-                                    <label for="title" class="col-md-4 col-form-label text-md-right">{{ __('Title') }}</label>
+                                    <label for="title" class="col-md-4 col-form-label text-md-right">{{ __('Название') }}</label>
 
                                     <div class="col-md-6">
                                         <input id="title" type="text" class="form-control{{ $errors->has('title') ? ' is-invalid' : '' }}" name="title" value="{{ old('title') }}" required autofocus>
@@ -32,7 +32,7 @@
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="text" class="col-md-4 col-form-label text-md-right">{{ __('Text') }}</label>
+                                    <label for="text" class="col-md-4 col-form-label text-md-right">{{ __('Текст') }}</label>
 
                                     <div class="col-md-6">
                                         <textarea id="text" type="text" class="form-control{{ $errors->has('text') ? ' is-invalid' : '' }}" name="text" required>{{ old('text') }}</textarea>

@@ -51,7 +51,8 @@ body.sidebar-none .content-section {
     max-width: 240px;
     width: 100%;
     height: 100vh;
-    background: #eee;
+    background: #222;
+    border-right: 1px solid #444;
     padding-top: 50px;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -63,19 +64,28 @@ body.sidebar-none .content-section {
 .sidebar ul {
     padding: 25px 0;
 }
-.sidebar ul li {
-
+.sidebar ul.users li {
+    display: flex;
+    border-bottom: 1px solid #777;
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
-.sidebar ul li a {
+.sidebar ul.users li img {
+    width: 34px;
+    height: 34px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.sidebar ul:not(.users) li a {
     display: block;
     padding: 10px 20px 10px;
-    color: #00000090;
+    color: #fff;
 }
-.sidebar ul li a:hover {
-    background: #ddd;
+.sidebar ul:not(.users) li a:hover {
+    background: #444;
 }
 .sidebar ul li.active a {
-    background: #ccc;
+    background: #444;
 }
 .content-section {
     margin-top: 75px;
@@ -101,7 +111,7 @@ body.sidebar-none .content-section {
 }
 .article .card-body .card-title {
     display: block;
-    color: #444;
+    color: #fff;
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 0;
@@ -181,12 +191,11 @@ body.sidebar-none .content-section {
 }
 .show-more {
     font-size: 18px;
-    color: #444444;
 }
 .card-title {
     font-weight: 500;
     font-size: 16px;
 }
 .card-title a {
-    color: #444;
+    color: #fff;
 }

@@ -6,7 +6,7 @@
             <div class="col-md-8">
                 <div class="card">
                     @if($profile->id)
-                        <div class="card-header">{{__('Edit Profile')}} - #{{$profile->id}}</div>
+                        <div class="card-header">{{__('Редактировать профиль')}} - #{{$profile->id}}</div>
                     @endif
 
                     <div class="card-body">
@@ -29,7 +29,7 @@
                             @csrf
 
                             <div class="form-group row">
-                                <label for="first-name" class="col-md-4 col-form-label text-md-right">{{ __('First Name') }}</label>
+                                <label for="first-name" class="col-md-4 col-form-label text-md-right">{{ __('Имя') }}</label>
 
                                 <div class="col-md-6">
                                     <input id="first-name" type="text" class="form-control{{ $errors->has('first-name') ? ' is-invalid' : '' }}" name="data[first_name]" value="{{ old('first-name',$profile->data['first_name']) }}" autofocus>
@@ -43,10 +43,10 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="first-name" class="col-md-4 col-form-label text-md-right">{{ __('Last Name') }}</label>
+                                <label for="first-name" class="col-md-4 col-form-label text-md-right">{{ __('Фамилия') }}</label>
 
                                 <div class="col-md-6">
-                                    <input id="last-name" type="text" class="form-control{{ $errors->has('last-name') ? ' is-invalid' : '' }}" name="data[last_name]" value="{{ old('last-name',$profile->data['last_name']) }}">
+                                    <input id="last-name" type="text" class="form-control{{ $errors->has('last-name') ? ' is-invalid' : '' }}" name="data[last_name]" value="{{ old('last-name',$profile->getData('last_name')) }}">
 
                                     @if ($errors->has('last-name'))
                                         <span class="invalid-feedback" role="alert">
@@ -57,14 +57,14 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="genderSelect" class="col-md-4 col-form-label text-md-right">{{ __('Gender') }}</label>
+                                <label for="genderSelect" class="col-md-4 col-form-label text-md-right">{{ __('Пол') }}</label>
 
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <select class="form-control" id="genderSelect" name="data[gender]"  value="{{ old('gender',$profile->data['gender']) }}">
-                                            @foreach($gender as $key=>$value)
-                                                <option value="{{$key}}"{!! $key == old('gender', $profile->getData('gender')) ? ' selected="selected"' : '' !!}>{{ucfirst($value)}}</option>
-                                            @endforeach
+                                        <select class="form-control" id="genderSelect" name="data[gender]">
+                                            <option value="male"{!! 'male' == old('gender', $profile->getData('gender')) ? ' selected="selected"' : '' !!}>Мужской</option>
+                                            <option value="female"{!! 'female' == old('gender', $profile->getData('gender')) ? ' selected="selected"' : '' !!}>Женский</option>
+
                                         </select>
                                     </div>
                                     @if ($errors->has('gender'))
@@ -76,7 +76,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="dataOfBirth" class="col-md-4 col-form-label text-md-right">{{ __('Date Of Birth') }}</label>
+                                <label for="dataOfBirth" class="col-md-4 col-form-label text-md-right">{{ __('Дата рождения') }}</label>
 
                                 <div class="col-md-6">
                                     <input id="dataOfBirth" type="date" class="form-control{{ $errors->has('dateOfBirth') ? ' is-invalid' : '' }}" name="data[date_of_birth]" value="{{ old('dataOfBirth',$profile->data['date_of_birth']) }}">
@@ -89,7 +89,7 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="country" class="col-md-4 col-form-label text-md-right">{{ __('Country') }}</label>
+                                <label for="country" class="col-md-4 col-form-label text-md-right">{{ __('Страна') }}</label>
 
                                 <div class="col-md-6">
                                     <div class="form-group">
@@ -108,7 +108,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <label class="col-md-4 col-form-label text-md-right" for="avatar">{{ __('Avatar') }}:</label>
+                                <label class="col-md-4 col-form-label text-md-right" for="avatar">{{ __('Изображение профиля') }}:</label>
                                 <div class="col-md-6">
                                     <input style="height: 42px !important;" type="file" id="avatar" class="form-control"  name="avatar"/>
                                     @if (!empty($profile->avatar))
@@ -122,7 +122,7 @@
                             <div class="form-group row mb-0">
                                 <div class="col-md-6 offset-md-4">
                                     <button type="submit" class="btn btn-primary">
-                                        {{ __('Save') }}
+                                        {{ __('Сохранить') }}
                                     </button>
                                 </div>
                             </div>
